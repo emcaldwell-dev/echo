@@ -55,7 +55,7 @@ a {
 	color:  #87c663; text-decoration: none;
 }
 .heroContainer {
-	background-image: url("../assets/bgcland.png");
+	/* background-image: url("../assets/bgcland.png"); */
 	padding-bottom: 12%; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.32);
 
 	background-position: center; background-repeat: no-repeat; background-size: cover;
@@ -77,14 +77,14 @@ a {
 /**** ABOUTME ****/
 .aboutMeContainer {
 	background-color: #333333; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.32);
-	display: flex; flex-direction: row; justify-content: center; padding-bottom: 10%;
+	display: flex; flex-direction: row; justify-content: center; padding: 0% 14%; padding-bottom: 8%;
 
 }
 .rightSide, .leftSide {
 	margin-top: 10%;
 }
 .rightSide {
-	font-size: 2em; color: #ffffff; padding-top: 9%;  font-family: 'quattrocento_sansregular'; line-height: 2;
+	font-size: 2em; color: #ffffff; padding-top: 2.5%;  font-family: 'quattrocento_sansregular'; line-height: 2;
 }
 .leftSide {
 	color: #99ff99; font-size: 9em; font-family: 'rufinabold';
@@ -117,7 +117,7 @@ a {
 /***** RESUME *****/
 .heading {
 	color: #99cc66; font-size: 4em; border-bottom : solid 1px;
-	margin-top: 5%; padding-left:2%; padding-bottom: .5%
+	margin-top: 5%; padding-left:2%; padding-bottom: .5%; font-family: 'quattrocento_sansregular';
 }
 .resumeContainer {
 	background-color: #ffffff; margin:8%;
@@ -140,7 +140,7 @@ a {
     padding-left: 2%; margin-right: 20%;
 }
 .leftDescr {
-	font-size: 1.6em; font-family: 'quattrocento_sansregular'; color: #999999; line-height: 2;
+	font-size: 1.6em; font-family: 'quattrocento_sansregular'; color: #999999; line-height: 1.5714285714285714em;
 }
 .resHead {
 	color: #333333; font-size: 20px; margin-bottom: 3%; font-family: 'rufinabold'; margin: 2% 0;
@@ -153,27 +153,41 @@ a {
 }
 .jobDescription {
 	margin: 1% 2% 0 0; font-size: 1.6em; font-family: 'quattrocento_sansregular'; color: #999999;
-	line-height: 2;
+	line-height: 1.5714285714285714em;
 }
 
 .unorderedListDescription {
 	margin: 1% 2% 4% 4%; font-size: 1.6em; font-family: 'quattrocento_sansregular'; color: #999999;
-	list-style-type: disc; line-height: 2;
+	list-style-type: disc; line-height: 1.5714285714285714em;
 }
 
 /***** PORTFOLIO *****/
-.grid-container {
-  display: grid;
-  grid-gap: 50px 100px;
+.gridContainer {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 3px; margin-top: 3%;
 
 }
-.grid-item {
- grid-column-start: 1;
- grid-column-end: 2;
+.gridimg{
+	display: block;
+	width: 100%;
+	height: auto;
+
 }
+.gridtext {
+	display: flex;
+	justify-content: flex-end;
 
 
-
+}
+.typography {
+	color: #99ff99;
+	font-family: 'rufinabold';
+	font-size: 5.38em;
+	line-height: 1.1;
+    font-size: 80px;
+    padding: 15%;
+}
 
 
 
