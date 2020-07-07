@@ -55,7 +55,7 @@ a {
 	color:  #87c663; text-decoration: none;
 }
 .heroContainer {
-	/* background-image: url("../assets/bgcland.png"); */
+	background-image: url("../assets/tiles.png");
 	padding-bottom: 12%; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.32);
 
 	background-position: center; background-repeat: no-repeat; background-size: cover;
@@ -177,16 +177,19 @@ a {
 .gridtext {
 	display: flex;
 	justify-content: flex-end;
+	padding-right: 10%;
+	padding-left: 10%;
+	align-items: end;
+	padding-bottom: 10%;
+	background-image: url("../assets/tiles.png");
 
 
 }
 .typography {
 	color: #99ff99;
 	font-family: 'rufinabold';
-	font-size: 5.38em;
 	line-height: 1.1;
-    font-size: 80px;
-    padding: 15%;
+    font-size: 5em;
 }
 
 
